@@ -77,16 +77,7 @@
         if ($result) {
             // Recorre los registros y muestra cada uno en una fila de la tabla
             while ($row = mysqli_fetch_assoc($result)) {
-                // echo '<tr>';
-                // echo '<td>' . $row['id_usuario'] . '</td>';
-                // echo '<td>' . $row['correo'] . '</td>';
-                // echo '<td>' . $row['contrasena'] . '</td>';
-                // echo '<td>';
                 ?>
-                <!-- Dentro del bucle que muestra las filas de la tabla -->
-                <!-- Dentro del bucle que muestra las filas de la tabla -->
-<!-- Dentro del bucle que muestra las filas de la tabla -->
-<!-- Dentro del bucle que muestra las filas de la tabla -->
                 <tr>
                     <td><?= $row['id_usuario'] ?></td>
                     <td>
@@ -97,12 +88,10 @@
                     <td><input type="text" name="contrasena_editar" value="<?= $row['contrasena'] ?>"></td>
                     <td>
                         <button class="btn btn-warning" name="editar" type="submit">Editar</button>
-                        <button class="btn btn-danger" name="cancelar" type="submit">Cancelar</button>
+                        <button class="btn btn-danger" name="eliminar" type="submit">Eliminar</button>
                         </form>
                     </td>
                 </tr>
-
-                <form>
                 <?php
                 echo '</td>';
                 echo '</tr>';
